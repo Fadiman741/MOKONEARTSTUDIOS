@@ -7,14 +7,16 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { NavbarComponent } from './Navbar/Navbar.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
+import { ImageSliderComponent } from './image-slider/image-slider.component';
 
 @NgModule({
-  declarations: [					
+  declarations: [						
     AppComponent,
       HomepageComponent,
       NavbarComponent,
       AboutComponent,
-      FooterComponent
+      FooterComponent,
+      ImageSliderComponent
    ],
   imports: [
     BrowserModule,
