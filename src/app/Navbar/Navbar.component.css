@@ -1,0 +1,105 @@
+.navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        color: #191818;
+        height: 5vh;
+}
+.nav-links a {
+        color: #eee;
+        text-decoration: none;
+}
+/* LOGO */
+.logo {
+        font-size: 32px;
+        padding-top: 15px;
+        padding-left: 28px;
+}
+/* NAVBAR MENU */
+.menu {
+        display: flex;
+        gap: 1em;
+        font-size: 18px;
+        font-family: "Work Sans",sans-serif;
+}
+
+.menu li {
+        padding: 5px 10px;
+        list-style-type: none;
+}
+
+input[type=checkbox] {
+        display: none;
+}
+ 
+     .navlinks {
+       display: inline-block;
+       position: relative;
+       padding: 5px;
+     }
+     
+     .navlinks:after {
+       content: '';
+       position: absolute;
+       width: 100%;
+       transform: scaleX(0);
+       height: 2px;
+       bottom: 0;
+       left: 0;
+       background-color:  #eee;
+       transform-origin: bottom right;
+       padding: 1px;
+       transition: transform 0.25s ease-out;
+     }
+     
+     .navlinks:hover:after {
+       transform: scaleX(1);
+       transform-origin: bottom left;
+     }
+
+
+/*HAMBURGER MENU*/
+.hamburger {
+        display: none;
+        font-size: 24px;
+        user-select: none;
+}
+
+
+    /* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+        .menu {
+                display: none;
+                position: absolute;
+                background-color: rgb(33 33 33);
+                right: 2%;
+                left: 50%;
+                text-align: left;
+                padding: 16px 0;
+        }
+        .menu li:hover {
+                display: inline-block;
+                border: 1px solid #0F4148;
+        }
+        .menu li+li {
+                margin-top: 12px;
+        }
+        input[type=checkbox]:checked~.menu {
+                display: block;
+        }
+        .hamburger {
+                display: block;
+                color: #eee;
+        }
+        .dropdown {
+                left: 50%;
+                top: 30px;
+                transform: translateX(35%);
+        }
+        .logo {
+
+                padding-left: 0px;
+        }
+
+}

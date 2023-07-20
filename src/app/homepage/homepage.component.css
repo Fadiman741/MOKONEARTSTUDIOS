@@ -1,0 +1,29 @@
+.homepage{
+        height: 100vh;
+        background-image: url('/assets/background/bg2.jpg');
+        background-size: cover;
+}
+.container{
+        padding-left: 60px;
+        padding-top: 200px;
+}
+.container h1{
+        color: #fff;
+        font-size: 70px;
+}
+@media screen and (max-width: 678px) {
+        .container{
+                /* padding: 30px; */
+                padding-left: 20px;
+                padding-right: 30px;
+                padding-top: 0px;
+        }
+        .container h1{
+                font-size: 55px;
+        }
+}
+@media screen and (max-width: 388px) {
+        .container h1{
+                font-size: 47px;
+        }
+}
