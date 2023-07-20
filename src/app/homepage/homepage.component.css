@@ -1,6 +1,6 @@
 .homepage{
         height: 100vh;
-        background-image: url('/assets/background/bg2.jpg');
+        background-image: url('src/assets/background/bg2.jpg');
         background-size: cover;
 }
 .container{

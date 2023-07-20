@@ -2,7 +2,7 @@
         min-height: 50vh;
         /* background-image: url('/assets/background/bg3.jpg'); */
         background-size: cover;
-        background-image: linear-gradient(to bottom, rgba(32, 80, 88, 0.85), rgba(18,42, 66, .85)), url('/assets/background/bg3.jpg');
+        background-image: linear-gradient(to bottom, rgba(32, 80, 88, 0.85), rgba(18,42, 66, .85)), url('src/assets/background/bg3.jpg');
         padding:20px
 }
 .description{
